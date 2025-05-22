@@ -1,0 +1,189 @@
+/************************ 
+Estrutura 
+************************/
+
+/* Define o estilo global do corpo da página */
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Cabeçalho fixo no topo, com cor de fundo e borda */
+#cabecalho {
+    background-color: #c5e3fe;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Centraliza o conteúdo e define largura máxima */
+.container {
+    width: 1145px;
+    margin: 0 auto;
+    padding: 1.4rem 0;
+}
+
+/* Menu de navegação alinhado à direita, sem marcadores */
+ul#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 475px;
+    float: right;
+}
+
+/* Estilo dos links do menu */
+ul#menu li a {
+    float: left;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: black;
+}
+
+/* Efeito hover nos links do menu */
+ul#menu li a:hover {
+    color: #4c799f;
+}
+
+/* Botão de destaque no menu */
+ul#menu li.comecar a {
+    background-color: black;
+    color: white;
+    border-radius: 1.2rem;
+}
+
+/* Efeito hover no botão de destaque */
+ul#menu li.comecar a:hover {
+    background-color: black;
+    color: #4c799f;
+    border-radius: 1.2rem;
+}
+
+/* Área de destaque com cor de fundo e margem para o cabeçalho fixo */
+#destaque {
+    background-color: #c5e3fe;
+    border-bottom: 1px solid black;
+    margin-top: 4.5rem;
+}
+
+/* Define largura da área de destaque */
+#area-destaque {
+    width: 55%;
+}
+
+/* Fundo decorativo na área de destaque */
+.fundo-destaque {
+    background: url("../img/fundo-topo.png") no-repeat right bottom;
+    background-size: 22rem;
+}
+
+/* Espaçamento superior na seção de tendências */
+#tendencias {
+    padding-top: 0.8rem;
+}
+
+/* Limpa floats na seção de tendências */
+#tendencias::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Estilo dos itens de tendência, com largura, padding e posicionamento */
+.item-tendencia {
+    width: 26%;
+    padding-left: 7%;
+    margin-bottom: 2rem;
+    position: relative;
+    float: left;
+}
+
+/* Número grande e claro para destacar posição */
+.numero {
+    font-size: 3rem;
+    font-weight: bold;
+    color: lightgray; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Rodapé com cor de fundo igual ao cabeçalho */
+#rodape {
+    background-color: #c5e3fe;
+    border-bottom: 1px solid black;
+}
+
+/*********************
+Tipografia
+*********************/
+
+/* Título principal grande e com espaçamento negativo */
+h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    margin: 0;
+    letter-spacing: -0.1rem;
+}
+
+/* Botão na área de destaque, com bordas arredondadas e espaçamento */
+#destaque button {
+    display: block;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid black;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: white;
+}
+
+/* Subtítulo em caixa alta e tamanho reduzido */
+h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* Título de tendência com ícone à esquerda */
+.titulo-tendencia {
+    background: url(../img/icone-tendencia.png) no-repeat left / contain;
+    padding: 0.2rem 0 0.2rem 2rem;
+}
+
+/* Margem reduzida para títulos menores */
+h3, h4 {
+    margin: 0.2rem;
+}
+
+/* Título h4 com peso leve */
+h4 {
+    font-weight: 100;
+}
+
+/* Ícones personalizados para diferentes itens */
+.icone1 {
+    background: url(../img/icone5.png) no-repeat left / contain;
+    padding-left: 1.5rem;
+}
+.icone2 {
+    background: url(../img/icone1.png) no-repeat left / contain;
+    padding-left: 1.5rem;
+}
+.icone3 {
+    background: url(../img/icone2.png) no-repeat left / contain;
+    padding-left: 1.5rem;
+}
+.icone4 {
+    background: url(../img/icone3.png) no-repeat left / contain;
+    padding-left: 1.5rem;
+}
+.icone5 {
+    background: url(../img/icone4.png) no-repeat left / contain;
+    padding-left: 1.5rem;
+}
+.icone6 {
+    background: url(../img/icone6.png) no-repeat left / contain;
+    padding-left: 1.5rem;
+}
